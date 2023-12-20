@@ -2,7 +2,7 @@ name: Auto Commit
 
 on:   
   schedule:
-  - cron: "*/120 * * * *" # https://crontab.guru/#*/30_*_*_*_*
+  - cron: "0 */4 * * *" # https://crontab.guru/#*/30_*_*_*_*
   
 jobs:
   auto_commit:
@@ -22,8 +22,8 @@ jobs:
           
       - name: Commit changes
         run: |
-          git config --local user.email "stevanvincent05@gmail.com"
-          git config --local user.name "Vann-Dev"
+          git config --local user.email "mikaelbroken77@gmail.com"
+          git config --local user.name "acumikael"
           git add -A
           
           arr[0]="chore(bot): 💤 Just woke up to commit"
